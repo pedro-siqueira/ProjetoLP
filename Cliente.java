@@ -3,14 +3,12 @@ public class Cliente {
     int id;
     String nome;
     String email;
-    int cpf;
-    int telefone;
+    String cpf;
+    String telefone;
 
-    public Cliente(){
-        this(-1,"","",-1,-1);
-    }
+    Cliente(){ this(-1,"","","",""); }
 
-    public Cliente(int id, String nome, String email, int cpf, int telefone) {
+    Cliente(int id, String nome, String email, String cpf, String telefone) {
         this.id = id;
         this.nome = nome;
         this.email = email;
