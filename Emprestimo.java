@@ -2,16 +2,17 @@ import java.util.Calendar;
 
 public class Emprestimo {
     int id;
-    String nomeCliente;
-    String nomeLivro;
-    Calendar dataEmprestimo;
-    Calendar dataRetorno;
+    int idCliente;
+    int idLivro;
+    String dataEmprestimo;
+    String dataRetorno;
 
-    public Emprestimo(int id, String nomeCliente, String nomeLivro, Calendar dataEmprestimo, Calendar dataRetorno) {
+    Emprestimo(int id, int idCliente, int idLivro, String dataEmprestimo, String dataRetorno) {
         this.id = id;
-        this.nomeCliente = nomeCliente;
-        this.nomeLivro = nomeLivro;
+        this.idCliente = idCliente;
+        this.idLivro = idLivro;
         this.dataEmprestimo = dataEmprestimo;
         this.dataRetorno = dataRetorno;
     }
+
 }
